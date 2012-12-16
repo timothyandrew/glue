@@ -1,3 +1,5 @@
+require 'redcarpet'
+
 class SnippetsController < ApplicationController
   def new
     @snippet = Snippet.new
@@ -15,6 +17,6 @@ class SnippetsController < ApplicationController
 
   def show
     snippet = Snippet.find_by_id(params[:id])
-    @text = snippet.text
+    @text = snippet.render
   end
 end
