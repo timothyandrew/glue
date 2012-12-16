@@ -1,0 +1,28 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: glue_dev
+  pool: 5
+  username: 
+  password: 
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: glue_tests<%= ENV['TEST_ENV_NUMBER'] %>
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: glue_prod 
+  pool: 5
+  username:
+  password:
+
+postgres:
+  adapter: postgresql
+  database: glue_test
+  username: postgres
+  
