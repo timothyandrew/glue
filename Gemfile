@@ -8,6 +8,7 @@ gem 'redcarpet'
 gem 'pygmentize'
 gem 'cancan'
 gem "twitter-bootstrap-rails"
+gem 'thin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
