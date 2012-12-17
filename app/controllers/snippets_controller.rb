@@ -18,6 +18,6 @@ class SnippetsController < ApplicationController
 
   def show
     snippet = Snippet.find_by_id(params[:id])
-    @text = snippet.render
+    @text = snippet.try(:render)
   end
 end
