@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
-gem 'omniauth'
+gem 'omniauth', :github => 'intridea/omniauth'
+gem 'omniauth-openid'
 gem 'pg'
 gem 'redcarpet'
 gem 'pygmentize'
+gem 'cancan'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

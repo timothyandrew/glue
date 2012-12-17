@@ -1,6 +1,8 @@
 require 'redcarpet'
 
 class SnippetsController < ApplicationController
+  authorize_resource
+
   def new
     @snippet = Snippet.new
     p @snippet
