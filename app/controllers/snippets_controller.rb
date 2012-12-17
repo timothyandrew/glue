@@ -5,7 +5,6 @@ class SnippetsController < ApplicationController
 
   def new
     @snippet = Snippet.new
-    p @snippet
   end
 
   def create

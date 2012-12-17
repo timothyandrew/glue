@@ -1,4 +1,8 @@
 class SessionsController < ApplicationController
+  def new
+    
+  end
+  
   def create
     info = request.env["omniauth.auth"]["info"]
     session[:email] = info[:email]
